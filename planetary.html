@@ -17,24 +17,28 @@
 </head>
 
 <body>
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="#">Nebulae</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav text-md-center nav-justified w-100">
+
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+
+          <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item dropdown">
+
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="diffuse.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Types
-        </a>
+            </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="diffuse.html">Diffuse</a>
               <a class="dropdown-item" href="dark.html">Dark</a>
@@ -44,6 +48,8 @@
           </li>
 
           <li class="nav-item">
+            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact Us</button>-->
+
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Contact Us</button>
 
             <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -64,14 +70,13 @@
                       </div>
                     </form>
                   </div>
-                  <!--end of modal-body----->
                   <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
                   </div>
                 </div>
               </div>
-              <!--end of modal-dialog----->
             </div>
+
           </li>
         </ul>
       </div>
@@ -83,17 +88,63 @@
   <div class="card bg-dark text-white">
     <img class="card-img" src="img/milky-way-pixabay1280.jpg" alt="Card image">
     <div class="card-img-overlay">
-      <h4 class="card-title">What is a Nebula?</h4>
-      <p class="card-text">Nebula (or Nebulae,plural) is a Latin word for "mist". A nebula is made up of interstellar mass consisting of dust, hydrogen, helium and other ionized gases. Most are vast in size and are formed in different ways. They come into existence when chunks
-        of interstellar mass undergo either a gravitational collapse or an expansion, due to death of a star nearby. Nebulae can be classified into four major classes: Diffuse Nebula, Dark Nebulae, Supernova Remnant Nebulae and Planetary Nebulae.</p>
-      <!--<p class="card-text">Last updated 3 mins ago</p>-->
+      <h4 class="card-title">Planetary Nebulae</h4>
+      <p class="card-text">Planetary Nebula is kind of an emission nebula formed when a low mass star dies. The glowing shell of ionized gas is ejected into the interstellar space, expanding away from the core.The core eventually becomes the white dwarf. Some examples of Planetary Nebulae are Ring Nebula, Blue Snowball Nebula, Cat's Eye Nebula and Dumbbell Nebula.</p>
 
-      <a role="button" class="btn btn-primary" href="diffuse.html">Diffuse Nebulae </a>
-      <a role="button" class="btn btn-primary" href="dark.html">Dark Nebulae</a>
-      <a role="button" class="btn btn-primary" href="supernova.html">Supernova Nebulae</a>
-      <a role="button" class="btn btn-primary" href="planetary.html">Planetary Nebulae</a>
+
+      <!-- Modal -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catseyeModal">Cat's Eye Nebula</button>
+
+      <div class="modal fade" id="catseyeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cat's Eye Nebula</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+              <img src="img/512px-Cat'sEyeNebula-wikimedia.jpg">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--end of modal-->
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bluesnowballModal">Blue Snowball Nebula</button>
+
+      <div class="modal fade" id="bluesnowballModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Blue Snowball Nebula</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/512px-NGC7662BlueSnowball-wikimedia.jpg">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
+
   </div>
+  <!--end of card---->
 
   <footer class="footer">
     <p>Created for Project Code- Phase 2 of Tech Connect @ NYPL.</p>
@@ -108,21 +159,13 @@
   </footer>
 
 
-  <!--  <h3>Supernova</h3>-->
-  <!--  <p>A Supernova remnant structure forms when a star explodes in a supernova explosion. When the core of a massive star reaches a certain threshold, the core collapses sending shock waves outward into the interstellar space,leaving behind a neutron star or black hole. Some examples of Supernova Remnant Nebulae are Crab Nebula, Tycho Nebula, Kepler's Nebula and Cassiopeia A.</p>-->
-  <!--</div>-->
-
-  <!--  <h3>Planetary Nebulae</h3>-->
-  <!--  <p>Planetary Nebula is kind of an emission nebula formed when a low mass star dies. The glowing shell of ionized gas is ejected into the interstellar space, expanding away from the core.The core eventually becomes the white dwarf. Some examples of Planetary Nebulae are Ring Nebula, Blue Snowball Nebula, Cat's Eye Nebula and Dumbbell Nebula.</p>-->
-  <!--</div>-->
-
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
